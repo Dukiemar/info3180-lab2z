@@ -20,10 +20,10 @@ def home():
     return render_template('home.html')
 
 
-#@app.route('/about/')
-#def about():
- #   """Render the website's about page."""
-  #  return render_template('about.html')
+@app.route('/about/')
+def about():
+    """Render the website's about page."""
+    return render_template('about.html')
   
 @app.route("/timeinfo/")
 def timeinfo():
@@ -61,4 +61,4 @@ def page_not_found(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port="8888")
+    app.run(debug=True,host="0.0.0.0",port="8080")
